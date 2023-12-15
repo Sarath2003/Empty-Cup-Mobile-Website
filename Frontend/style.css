@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Chivo', 'Lucida Sans Unicode', Verdana;
+}
+
+.container {
+  width: 100vw;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/*---------------  header --------------*/
+.main-header,
+nav ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.main-header {
+  justify-content: space-between;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+#logo {
+  width: 36px;
+}
+
+#menu {
+  padding: 0.5em;
+}
+
+.main-header h1 {
+  margin: 0;
+  color: #716966;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: -2px;
+  -webkit-text-stroke: 1.2px black;
+}
+
+.main-header,
+nav ul {
+  padding: 1.5em 1em;
+  margin: 0;
+}
+
+nav ul {
+  gap: 2.5em;
+}
+
+nav ul li p {
+  color: #716966;
+}
+
+nav li:nth-child(3) {
+  margin-right: auto;
+}
+
+#contacts img {
+  padding: 0.24em 0.15em;
+  border: 2.3px solid #e0a64e;
+  border-radius: 0.2em;
+}
+
+#contacts p {
+  color: #e0a64e;
+}
+
+#map p {
+  color: #d0d0d0;
+}
+
+/* -------------- list -------------- */
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+li p {
+  font-size: 0.5rem;
+}
+
+/* ------------- section ============= */
+section{
+  display: flex;
+}
+
+section {
+  padding: 2em 0em 2.5em 0em;
+}
+
+section:nth-of-type(odd){
+  background-color: #fffcf2;
+}
+
+.shortlisted-companies section:not(.shortlisted-company){
+  display: none;
+}
+
+.about,
+.contacts,
+.features > ul,
+.features li{
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  gap: 0.5em;
+  padding: 0em 2em;
+  border-right: 0.5px solid rgb(237, 234, 234);
+}
+
+.about h3{
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.rating > i{
+  letter-spacing: -2px;
+}
+
+.about p{
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.data{
+  display: flex;
+  gap: 2.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.data > p{
+  font-weight: 500;
+}
+
+.data span{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.contacts > p{
+  font-size: 1rem;
+  margin: 0.2em;
+}
+
+.feautres {
+  padding: 0;
+}
+
+.features > ul {
+  justify-content: space-between;
+  height: 100%;
+  padding: 0em 1.5em 1em 1.5em;
+  margin: 0;
+}
+
+.features li {
+  align-items: center;
+}
+
+.features li p {
+  color: #8d4337;
+  margin: 0.6em;
+}
+
+.features li:nth-child(1) p {
+  margin: 0;
+}
